@@ -1,7 +1,6 @@
 
 /* Copyright (c) 2023 Rodrigo Bento */
 
-
 package rbento;
 
 public class Program {

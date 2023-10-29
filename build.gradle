@@ -19,7 +19,7 @@ dependencies {
 
 java {
   toolchain {
-    languageVersion = JavaLanguageVersion.of(17)
+    languageVersion = JavaLanguageVersion.of(21)
     vendor = JvmVendorSpec.AZUL
   }
 }
@@ -33,10 +33,10 @@ spotless {
   encoding "UTF-8"
   java {
     target "src/*/java/**/*.java"
-    targetExclude "${layout.buildDirectory}/**"
+    targetExclude "${project.layout.buildDirectory}/**"
     importOrder()
     removeUnusedImports()
-    palantirJavaFormat()
+    palantirJavaFormat(libs.versions.palantir.java.format.get())
     formatAnnotations()
     endWithNewline()
     licenseHeaderFile "${project.rootDir}/COPYRIGHT"

@@ -5,8 +5,8 @@ A simple Java project starter.
 
 ### Dependencies
 
-- [Gradle](https://gradle.org/releases/) 8.3
-- [JDK 17](https://www.azul.com/downloads/?package=jdk#zulu) from Azul
+- [Gradle](https://gradle.org/releases/) 8.4
+- [JDK 21](https://www.azul.com/downloads/?package=jdk#zulu) from Azul
 
 ### Build
 
